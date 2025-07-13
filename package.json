@@ -16,7 +16,9 @@
   "keywords": [
     "eslint",
     "eslint-config",
-    "chatondearu"
+    "chatondearu",
+    "antfu",
+    "flat-config"
   ],
   "sideEffects": false,
   "exports": {
