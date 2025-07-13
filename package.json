@@ -33,6 +33,7 @@
   ],
   "scripts": {
     "build": "obuild",
+    "build:inspector": "pnpm build && npx @eslint/config-inspector build",
     "dev": "obuild --stub",
     "lint": "eslint",
     "prepublishOnly": "nr build",
@@ -60,6 +61,7 @@
   "devDependencies": {
     "@antfu/ni": "catalog:cli",
     "@chatondearu/eslint-config": "workspace:*",
+    "@eslint/config-inspector": "catalog:cli",
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",
     "eslint-plugin-format": "catalog:peer",
