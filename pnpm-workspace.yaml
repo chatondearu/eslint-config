@@ -4,19 +4,21 @@ packages:
   - packages/*
   - examples/*
 catalogs:
-  prod:
-    eslint: ^9.22.0
-    eslint-flat-config-utils: ^2.1.0
-    '@antfu/eslint-config': ^4.16.2
   cli:
     '@antfu/ni': ^24.1.0
     bumpp: ^10.1.0
     lint-staged: ^15.5.0
+    obuild: ^0.2.1
     simple-git-hooks: ^2.11.1
     tsx: ^4.19.3
     typescript: ^5.8.2
-    unbuild: ^3.5.0
     vite: ^6.2.1
+  peer:
+    '@antfu/eslint-config': ^4.16.2
+    eslint: ^9.22.0
+    eslint-plugin-format: ^1.0.1
+  prod:
+    eslint-flat-config-utils: ^2.1.0
   testing:
     vitest: ^3.0.8
     vitest-package-exports: ^0.1.1

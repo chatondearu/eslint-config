@@ -30,8 +30,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
+    "build": "obuild",
+    "dev": "obuild --stub",
     "lint": "eslint",
     "prepublishOnly": "nr build",
     "release": "bumpp && pnpm publish",
@@ -41,24 +41,32 @@
     "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
+    "@antfu/eslint-config": "^4.16.2",
     "eslint": "^9.22.0",
-    "@antfu/eslint-config": "^4.16.2"
+    "eslint-plugin-format": "^1.0.1"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-format": {
+      "optional": true
+    }
   },
   "dependencies": {
-    "@antfu/eslint-config": "catalog:prod",
-    "eslint": "catalog:prod",
+    "@antfu/eslint-config": "catalog:peer",
+    "eslint": "catalog:peer",
     "eslint-flat-config-utils": "catalog:prod"
   },
   "devDependencies": {
     "@antfu/ni": "catalog:cli",
+    "@chatondearu/eslint-config": "workspace:*",
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",
+    "eslint-plugin-format": "catalog:peer",
     "lint-staged": "catalog:cli",
+    "obuild": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
     "tinyexec": "catalog:utils",
     "tsx": "catalog:cli",
     "typescript": "catalog:cli",
-    "unbuild": "catalog:cli",
     "vite": "catalog:cli",
     "vitest": "catalog:testing",
     "vitest-package-exports": "catalog:testing",

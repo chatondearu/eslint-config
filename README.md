@@ -8,6 +8,19 @@
 
 My Eslint config
 
+## Nuxt
+
+to use with Nuxt :
+
+```
+import cda from '@chatondearu/eslint-config'
+import withNuxt from './.nuxt/eslint.config.mjs'
+
+export default withNuxt(
+  cda(),
+)
+```
+
 ## License
 
 [MIT](./LICENSE) License © [ChatonDeAru](https://github.com/chatondearu)
