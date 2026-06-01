@@ -1,3 +1,7 @@
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
 packages:
   - playground
   - docs
@@ -6,29 +10,29 @@ packages:
 
 catalogs:
   cli:
-    '@antfu/ni': ^24.1.0
-    '@eslint/config-inspector': ^1.1.0
-    bumpp: ^10.1.0
-    lint-staged: ^15.5.0
-    obuild: ^0.2.1
-    simple-git-hooks: ^2.11.1
-    tsx: ^4.19.3
-    typescript: ^5.8.2
-    vite: ^6.2.1
+    '@antfu/ni': ^30.1.0
+    '@eslint/config-inspector': ^3.0.4
+    bumpp: ^11.1.0
+    lint-staged: ^16.2.7
+    obuild: ^0.4.36
+    simple-git-hooks: ^2.13.1
+    tsx: ^4.22.4
+    typescript: ^5.9.3
+    vite: ^7.3.1
   peer:
-    '@antfu/eslint-config': ^4.16.2
-    eslint: ^9.22.0
-    eslint-plugin-format: ^1.0.1
+    '@antfu/eslint-config': ^9.0.0
+    eslint: ^9.39.3
+    eslint-plugin-format: ^2.0.1
   prod:
-    eslint-flat-config-utils: ^2.1.0
+    eslint-flat-config-utils: ^3.2.0
   testing:
-    vitest: ^3.0.8
-    vitest-package-exports: ^0.1.1
-    yaml: ^2.7.0
+    vitest: ^4.1.8
+    vitest-package-exports: ^1.2.0
+    yaml: ^2.9.0
   types:
-    '@types/node': ^22.13.10
+    '@types/node': ^22.19.15
   utils:
-    tinyexec: ^0.3.2
+    tinyexec: ^1.2.4
 
 onlyBuiltDependencies:
   - esbuild

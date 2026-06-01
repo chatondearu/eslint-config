@@ -12,7 +12,22 @@ This project extends the excellent flat ESLint config from `@antfu/eslint-config
 ## Install
 
 ```bash
-pnpm add -D @chatondearu/eslint-config
+pnpm add -D @chatondearu/eslint-config @antfu/eslint-config eslint eslint-plugin-format
+```
+
+### Peer dependencies
+
+Install compatible peers in your project:
+
+- `@antfu/eslint-config` `^9.0.0`
+- `eslint` `^9.10.0` or `^10.0.0`
+- `eslint-plugin-format` `>=0.1.0` (required when `formatters: true`)
+
+For pnpm workspaces, Antfu v9 also expects these root settings in `pnpm-workspace.yaml`:
+
+```yaml
+shellEmulator: true
+trustPolicy: no-downgrade
 ```
 
 ## Usage
