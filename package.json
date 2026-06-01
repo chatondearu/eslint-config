@@ -1,7 +1,7 @@
 {
   "name": "@chatondearu/eslint-config",
   "type": "module",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "packageManager": "pnpm@10.13.1",
   "description": "Custom ESLint flat config based on antfu",
   "author": "ChatonDeAru <hi@chatondearu.fr>",
