@@ -83,9 +83,6 @@ importers:
       '@antfu/ni':
         specifier: catalog:cli
         version: 24.4.0
-      '@chatondearu/eslint-config':
-        specifier: workspace:*
-        version: 'link:'
       '@eslint/config-inspector':
         specifier: catalog:cli
         version: 1.1.0(eslint@9.31.0(jiti@2.4.2))

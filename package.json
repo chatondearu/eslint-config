@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.2.1",
   "packageManager": "pnpm@10.13.1",
-  "description": "My Eslint config",
+  "description": "Custom ESLint flat config based on antfu",
   "author": "ChatonDeAru <hi@chatondearu.fr>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/chatondearu",
@@ -35,7 +35,7 @@
     "build": "obuild",
     "build:inspector": "pnpm build && npx @eslint/config-inspector build",
     "dev": "obuild --stub",
-    "lint": "eslint",
+    "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp && pnpm publish",
     "start": "tsx src/index.ts",
@@ -48,11 +48,6 @@
     "eslint": "^9.22.0",
     "eslint-plugin-format": "^1.0.1"
   },
-  "peerDependenciesMeta": {
-    "eslint-plugin-format": {
-      "optional": true
-    }
-  },
   "dependencies": {
     "@antfu/eslint-config": "catalog:peer",
     "eslint": "catalog:peer",
@@ -60,7 +55,6 @@
   },
   "devDependencies": {
     "@antfu/ni": "catalog:cli",
-    "@chatondearu/eslint-config": "workspace:*",
     "@eslint/config-inspector": "catalog:cli",
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",

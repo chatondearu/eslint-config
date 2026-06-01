@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
+import cda from '../src'
 
-describe('should', () => {
-  it('exported', () => {
-    expect(1).toEqual(1)
+describe('config factory', () => {
+  it('creates a flat config composer', () => {
+    expect(() => cda()).not.toThrow()
   })
 })

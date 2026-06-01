@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { getPackageExportsManifest } from 'vitest-package-exports'
 import yaml from 'yaml'
 
-// TODO: remove this when you are ready for the first release
+// Keep this gate explicit to disable snapshot checks locally if needed.
 const IS_READY = true
 
 describe.runIf(IS_READY)('exports-snapshot', async () => {

@@ -7,17 +7,39 @@
 [![License][license-src]][license-href]
 [![code style][code-style-src]][code-style-href]
 
-This project is an extended version of the great elsint flat config from @antfu with some options added by default for my usage.
+This project extends the excellent flat ESLint config from `@antfu/eslint-config` with a small set of defaults used in my projects.
 
-## install
+## Install
 
-`pnpm add -D @chatondearu/eslint-config --save-catalog-name dev`
+```bash
+pnpm add -D @chatondearu/eslint-config
+```
 
 ## Usage
 
-The usage is the same as [@antfu/eslint-config][code-style-href]
+Usage is intentionally close to [@antfu/eslint-config][code-style-href].
 
-add the file `eslint.config.js` with to the root of your project :
+### Defaults enabled by this wrapper
+
+This wrapper enables these options by default:
+
+- `typescript: true`
+- `formatters: true`
+- `pnpm: true`
+
+You can override any of them in your project config:
+
+```javascript
+import cda from '@chatondearu/eslint-config'
+
+export default cda({
+  typescript: false,
+  formatters: false,
+  pnpm: false,
+})
+```
+
+Create an `eslint.config.js` file at the root of your project:
 
 ```javascript
 import cda from '@chatondearu/eslint-config'
@@ -30,7 +52,7 @@ export default cda({
 
 ### Nuxt
 
-to use with Nuxt :
+To use with Nuxt:
 
 ```javascript
 import cda from '@chatondearu/eslint-config'
@@ -43,7 +65,7 @@ export default withNuxt(
 
 ## License
 
-[MIT](./LICENSE) License © [ChatonDeAru](https://github.com/chatondearu)
+[MIT](./LICENSE.md) License © [ChatonDeAru](https://github.com/chatondearu)
 
 <!-- Badges -->
 
@@ -53,8 +75,8 @@ export default withNuxt(
 [npm-downloads-href]: https://npmjs.com/package/@chatondearu/eslint-config
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/@chatondearu/eslint-config?style=flat&colorA=080f12&colorB=1fa669&label=minzip
 [bundle-href]: https://bundlephobia.com/result?p=@chatondearu/eslint-config
-[license-src]: https://img.shields.io/github/license/antfu/@chatondearu/eslint-config.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/chatondearu/@chatondearu/eslint-config/blob/main/LICENSE
+[license-src]: https://img.shields.io/github/license/chatondearu/eslint-config.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/chatondearu/eslint-config/blob/main/LICENSE.md
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
 [jsdocs-href]: https://www.jsdocs.io/package/@chatondearu/eslint-config
 [code-style-src]: https://antfu.me/badge-code-style.svg

@@ -17,8 +17,6 @@ function cda(
     //   a11y: true,
     // },
     ...options,
-  }, {
-    //  TODO: Add custom rules
   }, ...userConfigs)
 }
 
