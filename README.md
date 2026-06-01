@@ -1,5 +1,6 @@
 # eslint-config
 
+[![CI][ci-src]][ci-href]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![bundle][bundle-src]][bundle-href]
@@ -78,12 +79,24 @@ export default withNuxt(
 )
 ```
 
+## Releasing
+
+CI runs on every push/PR to `main`. npm publishes are automated when a `v*` tag is pushed (trusted publisher / OIDC).
+
+See [`.github/RELEASING.md`](./.github/RELEASING.md) for npm and GitHub setup, then:
+
+```bash
+pnpm release
+```
+
 ## License
 
 [MIT](./LICENSE.md) License © [ChatonDeAru](https://github.com/chatondearu)
 
 <!-- Badges -->
 
+[ci-src]: https://github.com/chatondearu/eslint-config/actions/workflows/ci.yml/badge.svg
+[ci-href]: https://github.com/chatondearu/eslint-config/actions/workflows/ci.yml
 [npm-version-src]: https://img.shields.io/npm/v/@chatondearu/eslint-config?style=flat&colorA=080f12&colorB=1fa669
 [npm-version-href]: https://npmjs.com/package/@chatondearu/eslint-config
 [npm-downloads-src]: https://img.shields.io/npm/dm/@chatondearu/eslint-config?style=flat&colorA=080f12&colorB=1fa669

@@ -31,15 +31,20 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "obuild",
     "build:inspector": "pnpm build && npx @eslint/config-inspector build",
     "dev": "obuild --stub",
     "lint": "eslint .",
-    "prepublishOnly": "nr build",
-    "release": "bumpp && pnpm publish",
+    "prepublishOnly": "pnpm build",
+    "release": "bumpp",
     "start": "tsx src/index.ts",
     "test": "vitest",
+    "test:ci": "vitest run",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
