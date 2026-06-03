@@ -62,5 +62,7 @@ Manual publish (fallback, not recommended):
 
 ```bash
 pnpm build
-npm publish --access public
+pnpm publish --access public --no-git-checks
 ```
+
+Use `pnpm publish` (not `npm publish`) so `catalog:` specifiers are replaced with real version ranges in the published manifest.

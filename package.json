@@ -1,7 +1,7 @@
 {
   "name": "@chatondearu/eslint-config",
   "type": "module",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "packageManager": "pnpm@10.13.1",
   "description": "Custom ESLint flat config based on antfu",
   "author": "ChatonDeAru <hi@chatondearu.fr>",
@@ -54,15 +54,15 @@
     "eslint-plugin-format": ">=0.1.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "catalog:peer",
-    "eslint": "catalog:peer",
     "eslint-flat-config-utils": "catalog:prod"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "catalog:peer",
     "@antfu/ni": "catalog:cli",
     "@eslint/config-inspector": "catalog:cli",
     "@types/node": "catalog:types",
     "bumpp": "catalog:cli",
+    "eslint": "catalog:peer",
     "eslint-plugin-format": "catalog:peer",
     "lint-staged": "catalog:cli",
     "obuild": "catalog:cli",
